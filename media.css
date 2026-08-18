@@ -1,4 +1,5 @@
   /* 'AS PVT. LTD. SOLUTIONS' का टेक्स्ट छुपाएं */
+  @media screen and (max-width: 955px) {
   .navbar-brand-name {
     display: none !important;
   }
