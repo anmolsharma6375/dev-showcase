@@ -55,3 +55,39 @@ if (navbarToggle && navbarLinks) {
     });
   });
 }
+
+
+
+
+
+
+// ==========================================
+//  Modal Popup Form Handler for 'Get Started' CTA 
+// ==========================================
+
+// Step 1: DOM Elements Select karna
+const ctaBtn = document.querySelector('.cta-btn'); // Hero section ka 'Get Started' button
+const modal = document.getElementById('contactModal'); // Popup Form overlay
+const closeModal = document.getElementById('closeModal'); // Form ka Close (X) button
+
+// Step 2: Get Started Button Click Event (Form Kholne Ke Liye)
+if (ctaBtn && modal) {
+  ctaBtn.addEventListener('click', () => {
+    // 'active' class add hote hi CSS se form visible ho jayega
+    modal.classList.add('active');
+  });
+}
+
+// Step 3: Close Button Click Event (Form Band Karne Ke Liye)
+if (closeModal && modal) {
+  closeModal.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+
+  // Background par kahin bhi bahar click karne se bhi form close ho jayega
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+    }
+  });
+}
