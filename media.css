@@ -1,0 +1,440 @@
+/* ============================================
+   RESPONSIVE / MOBILE
+===========================================
+  /* =========================================================
+     2. NAVBAR & MOBILE MENU STYLING
+  ========================================================= */
+  /* 'AS PVT. LTD. SOLUTIONS' का टेक्स्ट छुपाएं */
+  @media screen and (max-width: 955px) {
+
+  .navbar-brand-name {
+    display: none !important;
+  }
+
+  /* Hamburger Icon */
+  .navbar-toggle {
+    display: flex !important;
+    z-index: 101;
+  }
+
+  /* Navigation Links Dropdown Menu */
+  .navbar-links {
+    position: fixed;
+     top: 65px; /*Navbar ke theek neeche */
+    left: 0;
+    width: 100%;
+    background: rgba(6, 12, 30, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(160, 190, 255, 0.18);
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    gap: 16px;
+    
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar-links.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbar-link {
+    width: 80%;
+    text-align: center;
+    font-size: 1.05rem;
+    padding: 12px 0;
+  }
+
+
+
+  }
+
+
+
+@media screen and (max-width: 955px) {
+
+  /* =========================================================
+     1. HERO CARD HEIGHT & SPacing FIX (खाली जगह खत्म!)
+  ========================================================= */
+  .hero-section ,.hero-card {
+    margin-top: 50px !important;
+    /* padding: 0 16px !important; */
+
+  }
+
+ 
+
+
+.hero-card {
+    /* Format: padding: [TOP] [RIGHT/LEFT] [BOTTOM] */
+    padding-top: 12px !important;   
+    padding-bottom: 12px !important; 
+    
+    height: auto !important;       
+    min-height: auto !important;   
+  }
+
+
+  .hero-card {
+    height: auto !important;      
+    min-height: auto !important;     
+    padding: 24px 20px !important;   
+    border-radius: 20px !important;
+    
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .hero-card .btn-primary,
+  .hero-card a {
+    margin-bottom: 0 !important; 
+  }
+
+
+}
+/* ============================================
+   HERO SECTION //  FEATURES SECTION
+============================================ */
+@media (max-width: 900px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-card {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .hero-copy {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-media {
+    order: 2;
+    max-width: 100%;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blob-top {
+    width: 160px;
+    height: 90px;
+    right: 4%;
+  }
+
+  .blob-bottom {
+    width: 140px;
+    height: 180px;
+    left: -50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero {
+    padding: 40px 6vw;
+  }
+
+  .hero-card {
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .features {
+    padding: 60px 6vw 80px;
+  }
+
+  .features-heading h2 {
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+}
+
+
+
+
+/* ============================================
+   SECTION 1 TO SECTION3
+============================================ */
+
+/* 📱💻 Tablets & Below (Up to 900px) */
+@media (max-width: 900px) {
+  .solutions-inner,
+  .specializations-inner {
+    flex-direction: column;
+  }
+
+  .solutions-media {
+    width: 220px;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .specializations-media img {
+    max-width: 250px;
+    top: -15px;
+    left: 0;
+  }
+
+  .blob-behind-code {
+    width: 180px;
+    height: 180px;
+    bottom: -30px;
+    left: 120px;
+    filter: blur(15px);
+  }
+}
+
+/* 📱 Mobile Screens (Up to 650px) */
+@media (max-width: 650px) {
+  .solutions,
+  .specializations,
+  .plans {
+    padding: 70px 6vw;
+  }
+
+  .solutions-title {
+    font-size: 2.1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .pill {
+    padding: 18px 22px;
+    font-size: 0.85rem;
+  }
+
+  .plan-card {
+    padding: 30px 24px;
+  }
+}
+
+
+/* ============================================
+   CONTACT SECTION //CONTACT PANEL // FOOTER 
+  ============================================ */
+
+
+@media (max-width: 900px) {
+  .contact {
+    min-height: auto;
+    padding: 40px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .contact-top {
+    width: 100%;
+    max-width: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .brand h1 {
+    font-size: clamp(1.4rem, 5vw, 2rem);
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .perks {
+    align-items: center; 
+    gap: 14px;
+  }
+
+  .perks li {
+    font-size: 0.95rem;
+    justify-content: center;
+  }
+
+  /* --- Contact Panel (Card) --- */
+  .contact-panel {
+    position: static;
+    width: 100%;
+    max-width: 380px;
+    margin: 36px auto 0;
+  }
+
+  .panel-title {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .info-box {
+    background: rgba(10, 20, 50, 0.45);
+    border: 1px solid rgba(250, 250, 250, 0.15);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+  }
+
+  .info-row {
+    padding: 14px 18px;
+    margin: 0;
+    justify-content: flex-start; 
+    font-size: 0.85rem;
+  }
+
+  .contact-footer {
+    font-size: 0.8rem;
+    margin-top: 40px;
+    padding-top: 10px;
+    text-align: center;
+    opacity: 0.85;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* ============================================
+   TABLET RESPONSIVE (iPad Air & iPad Pro)
+============================================ */
+/* 📱 केवल मोबाइल (650px से नीचे) - Single Column Center Layout */
+@media (max-width: 650px) {
+  .contact {
+    min-height: auto;
+    padding: 40px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-top {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+  }
+
+  .brand {
+    justify-content: center;
+  }
+
+  .perks {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    gap: 12px;
+  }
+
+  .perks li {
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    justify-content: flex-start;
+  }
+
+  .contact-panel {
+    position: static;
+    width: 100%;
+    max-width: 380px;
+    margin: 32px auto 0;
+  }
+
+  .panel-title {
+    text-align: center;
+  }
+}
+
+/* 📱💻 टैबलेट्स (651px से 1024px - iPad Air / Pro) - Balanced 2-Column Grid */
+@media (min-width: 651px) and (max-width: 1024px) {
+  .contact {
+    min-height: auto;
+    padding: 60px 5vw 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Left aur Right dono taraf equal space */
+    gap: 40px;
+    align-items: start;
+  }
+
+  .contact-top {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .brand {
+    justify-content: flex-start;
+  }
+
+  .tagline {
+    text-align: left;
+    font-size: 1.05rem;
+  }
+
+  .perks {
+    width: 100%;
+    gap: 14px;
+  }
+
+  .perks li {
+    padding: 14px 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+  }
+
+  .contact-panel {
+    position: static;
+    width: 100%;
+    max-width: 100%; /* Grid cell ki poori width lega */
+    margin: 0;
+  }
+
+  .panel-title {
+    text-align: left;
+  }
+
+  .contact-footer {
+    grid-column: 1 / -1; /* Dono columns ke neeche span hoga */
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+  }
+}
