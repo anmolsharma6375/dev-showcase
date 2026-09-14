@@ -173,30 +173,6 @@ if (closeModal && modal) {
 
 
 
-
-
-
-
-// function toggleService(serviceKey) {
-//   const services = ['web', 'it', 'seo'];
-
-//   services.forEach(key => {
-//     const box = document.getElementById(`service-${key}`);
-
-//     if (key === serviceKey) {
-//       box.classList.toggle('hidden');
-//     } else {
-//       box.classList.add('hidden');
-//     }
-//   });
-// }
-
-// function handleServiceSubmit(event, serviceName) {
-//   event.preventDefault();
-//   alert(`Thank you! Your requirement for ${serviceName} has been received. We will get in touch soon.`);
-// }
-
-
 function toggleService(serviceKey){
   const services = ['web', 'it', 'seo'];
 
